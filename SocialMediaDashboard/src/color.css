@@ -1,0 +1,46 @@
+/*Color CSS*/
+
+.top-bg-dark {
+  background-color: hsl(232, 19%, 15%);
+}
+
+.top-bg-lg {
+  background-color: hsl(225, 100%, 98%);
+}
+
+.bg-dark {
+  background-color: hsl(230, 17%, 14%);
+}
+
+.card-bg-dark {
+  background-color:hsl(228, 28%, 20%);
+}
+
+.card-bg-dark:hover{
+  background-color: hsl(228, 28%, 30%);
+}
+
+.card-bg-light {
+  background-color: hsl(227, 47%, 96%);
+}
+
+.card-bg-light:hover {
+  background-color: hsl(227, 47%, 90%);
+}
+
+.greyish-text-dark{
+  color: hsl(228, 34%, 66%);
+}
+
+.greyish-text-lg {
+  color: hsl(228, 12%, 44%);
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.black-text {
+  color: hsl(230, 17%, 14%)
+}
+

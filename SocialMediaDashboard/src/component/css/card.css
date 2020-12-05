@@ -1,0 +1,135 @@
+/*Card CSS*/
+.card-lg {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardLine {
+  width: 100%;
+  height: 5px;
+}
+
+.cardTag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.875rem 0;
+}
+
+.icon-brand {
+  height: 1.25rem;
+}
+.cardTag img {
+  margin-right: 0.25rem;
+}
+
+.cardTag p{
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.cardNb {
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.cardFol {
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  letter-spacing: 0.2em;
+}
+
+.cardChanges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5625rem 0;
+}
+
+.cardChanges .iconChanges {
+  height: 0.5rem;
+  margin-right: 0.2rem;
+}
+
+.cardChanges p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+
+.icon-up {
+  color: #1DB489;
+}
+
+.icon-down {
+  color: #DC414C;
+}
+
+
+
+/* ----- Small Card CSS ----- */
+
+.card-sm {
+  height: 8rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-sm-row {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mLeft {
+  margin-left: 1.5rem;
+}
+
+.mRight {
+  margin-right: 1.5rem;
+}
+
+.card-sm-title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.card-sm-count {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+
+
+/* Media Query CSS */
+@media only screen and (max-width: 426px){
+  .card-lg {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-sm {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,218 @@
+@font-a: "Poppins";
+@font-b: "Open Sans";
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/images/bg-desktop.svg");
+  background-color: #674BAF;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding-top: 2.5rem;
+}
+
+.logo, .content {
+  margin-left: 4.125rem;
+}
+
+.logo {
+  height: auto;
+  width: 15rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 5.6875rem;
+  width: auto;
+}
+
+.illustration {
+  margin-right: 5.3125rem;
+}
+
+.font-color(){
+  color: white;
+}
+
+.cta {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+
+  h1 {
+    max-width: 26rem;
+    margin-bottom: 1.5rem;
+
+    letter-spacing: 0.03em;
+    line-height: 48px;
+
+    font-family: @font-a;
+    font-weight: 700;
+    font-size: 2rem;
+    .font-color();
+  }
+  
+  p {
+    max-width: 29rem;
+    margin-bottom: 1.5rem;
+
+    font-family: @font-b;
+    font-weight: 400;
+    .font-color();
+  }
+
+  .button {
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 9.8125rem;
+    height: 3rem;
+
+    span {
+      line-height: 0;
+      margin: 0;
+    }
+
+  }
+}
+
+.socialMediaButtons {
+  margin-top: 3rem;
+
+  img {
+    margin-right: 1.5rem;
+  }
+
+  & img:hover{
+    cursor: pointer;
+  }
+
+  &-mb {
+    display: none;
+  }
+
+}
+  
+
+@media only screen and (max-width: 1000px){
+  html {
+    font-size: 10px;
+  }
+
+  .App {
+    background-image: url("/images/bg-mobile.svg");
+  }
+
+  .logo, .content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .logo {
+    height: auto;
+    width: 10rem;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .illustration {
+    height: auto;
+    width: 20rem;
+    margin-right: 0;
+  }
+
+  .cta {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .button {
+      width: 80%;
+    }
+  }
+
+  .socialMediaButtons {
+    
+    display: none;
+
+    &-mb{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      img {
+        margin-right: 1.5rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 430px){
+  html {
+    font-size: 16px;
+  }
+
+  .App {
+    background-image: url("/images/bg-desktop.svg");
+  }
+
+  .illustration {
+    height: auto;
+    width: 25rem;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 842px){
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1000px){
+  html {
+    font-size: 14px;
+  }
+
+  .logo , .content {
+    margin-left: 3rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .illustration {
+      width: auto;
+      height: 30rem;
+    }
+  }
+
+  .socialMediaButtons img {
+    margin-right: 1rem;
+  }
+  
+}

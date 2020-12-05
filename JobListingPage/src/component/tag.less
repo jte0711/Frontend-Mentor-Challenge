@@ -1,0 +1,70 @@
+@import '../color.less';
+
+.tag {
+  display: inline-block;
+  background: @lg-cyan-bg;
+  margin-left: 1rem;
+
+  &:hover{
+    background: @primary-color;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+
+  &-name{
+    padding: 0.5rem 0.5rem 0.4rem 0.5rem;
+    margin: 0;
+    color: @primary-color;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  &:hover &-name{
+    color: @lg-cyan-filter;
+    transition: color 0.5s;
+  }
+}
+
+.normalBorder{
+  border-radius: 3px;
+}
+
+.filterBorder{
+  border-radius: 3px 0px 0px 3px;
+}
+
+.x-icon{
+  background: @primary-color;
+  border-radius: 0px 3px 3px 0px;
+
+  &:hover{
+    background-color: @v-dk-cyan;
+    transition: background-color 0.5s;
+    cursor: pointer;
+  }
+}
+
+.theIcon {
+  font-size: 1.5rem;
+
+  .x-icon:hover &{
+    color: @lg-cyan-filter;
+    transition: color 0.5s;
+  }
+}
+
+
+@media only screen and (max-width: 800px){
+
+  .tagx {
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+
+    & .tag{
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
